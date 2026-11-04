@@ -1,0 +1,11 @@
+
+# BEGIN SHARED CONSOLE
+if [ -t 0 ] && [ "$(tty 2>/dev/null)" = /dev/ttyPS0 ] &&
+   [ -z "${TMUX:-}" ] && /opt/shared-console/active; then
+    if [ "$(stty size 2>/dev/null)" = "0 0" ]; then
+        stty rows 24 cols 80
+    fi
+    TERM=xterm-256color /opt/shared-console/shared-shell
+fi
+# END SHARED CONSOLE
+

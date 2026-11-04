@@ -1,0 +1,2 @@
+#!/bin/sh
+cmp -s /sd/a2_fb43_top.bit /opt/shared-console/dual_console.bit

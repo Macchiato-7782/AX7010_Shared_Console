@@ -1,0 +1,7 @@
+* text=auto
+board/* text eol=lf
+*.sh text eol=lf
+board/lcdterm binary
+*.bit binary
+*.deb binary
+*.pdf binary

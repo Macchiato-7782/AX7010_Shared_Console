@@ -1,0 +1,17 @@
+# Vivado build outputs
+*.bit
+*.rpt
+*.jou
+*.log
+*.str
+vivado/project/
+vivado/.Xil/
+.Xil/
+
+# Board deployment artifacts
+*.deb
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini

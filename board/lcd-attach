@@ -1,0 +1,3 @@
+#!/bin/sh
+export TERM=shared-lcd
+exec /opt/shared-console/shared-shell

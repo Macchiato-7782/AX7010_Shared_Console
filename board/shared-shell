@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+if [ -n "${TMUX:-}" ]; then
+    exec /opt/shared-console/lcdterm-bash
+fi
+exec /usr/bin/tmux -L shared -f /opt/shared-console/tmux.conf new-session -A -s shared -n shell -c /root

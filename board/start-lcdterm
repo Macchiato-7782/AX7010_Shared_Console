@@ -1,0 +1,5 @@
+#!/bin/sh
+if /opt/shared-console/active; then
+    exec /opt/shared-console/lcdterm --pl-handoff --charcoal --shell /opt/shared-console/lcd-attach
+fi
+exec /opt/a2-dual/start-lcdterm.sh

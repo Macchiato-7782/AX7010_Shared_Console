@@ -1,0 +1,6 @@
+shared-lcd|Shared 4.3 inch framebuffer terminal,
+    smcup@, rmcup@, smacs@, rmacs@, enacs@, acsc@,
+    smkx@, rmkx@, kmous@, ht@, cbt@,
+    kcuu1=\E[A, kcud1=\E[B, kcuf1=\E[C, kcub1=\E[D,
+    khome=\E[H, kend=\E[F,
+    use=xterm-256color,

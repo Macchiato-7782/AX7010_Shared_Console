@@ -1,0 +1,12 @@
+#!/bin/bash
+if [[ ${BASH_SOURCE[0]} == "$0" ]]; then
+    exec /bin/bash --noprofile --rcfile "$0" -i
+fi
+
+PS1='\[\e[96m\]\u@\h\[\e[0m\]:\[\e[94m\]\w\[\e[0m\]\$ '
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+command_not_found_handle() {
+    printf '\e[91mbash: %s: command not found\e[0m\n' "$1" >&2
+    return 127
+}

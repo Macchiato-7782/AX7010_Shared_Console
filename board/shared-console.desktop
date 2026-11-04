@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Shared Terminal
+Comment=Open the shared console
+Exec=/opt/shared-console/shared-console
+Icon=utilities-terminal
+Terminal=false
+Categories=System;TerminalEmulator;

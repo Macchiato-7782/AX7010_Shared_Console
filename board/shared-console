@@ -1,0 +1,4 @@
+#!/bin/sh
+/opt/shared-console/active || exit 0
+exec xfce4-terminal --disable-server --title="Shared Terminal" --geometry=76x22+24+48 --command=/opt/shared-console/shared-shell
+
